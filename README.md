@@ -3,6 +3,8 @@ Battlestar Galactica Deadlock Save Game Editor
 
 This is a GUI save-game editor for Windows. Written in python using tkinter with the assistance of some AI-revisions.
 
+![alt text](https://github.com/Cortexian/BSG-Deadlock-Save-Editor/blob/main/readme.png "BSG Deadlock Editor Interface")
+
 ## Current Features
 - Automatically detect savegame files in the default locations for Steam and GOG, allowing the user to select which file to edit.
 - Manually open a file if the auto-detection fails.
