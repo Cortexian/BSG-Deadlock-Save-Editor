@@ -11,7 +11,7 @@ This is a GUI save-game editor for Windows. Written in python using tkinter with
 - Display a list of current fleets and the ships that make up those fleets.
 - Modify fleet and ship names, as well as fleet composition (add/remove/modify ships).
 - Display and modify resources (Tylium / Requisition Points).
+- Options to globally unlock/research specific ships, munitions, and fighter squadron types.
 
 ### Planned Features
 - More detailed ship modification, including changing equipped munitions and fighter squadrons where applicable.
-- Options to globally unlock/research specific ships, munitions, and fighter squadron types.
