@@ -36,7 +36,6 @@ MUNITION_TYPES = {
 }
 
 # --- Squadron Capacity Definitions ---
-# Defines the number of squadron slots and any special capabilities.
 SQUADRON_CAPACITY = {
     "Berserk": {"capacity": 1, "viper_mk_vii_capable": False},
     "Adamant": {"capacity": 1, "viper_mk_vii_capable": False},
@@ -48,4 +47,52 @@ SQUADRON_CAPACITY = {
     "Jupiter Mk2": {"capacity": 4, "viper_mk_vii_capable": False},
     "Valkyrie": {"capacity": 1, "viper_mk_vii_capable": True},
     "Mercury": {"capacity": 4, "viper_mk_vii_capable": True}
+}
+
+# --- DLC Definitions ---
+DLC_NAMES = [
+    "Reinforcement Pack", "The Broken Alliance", "Anabasis",
+    "Sin and Sacrifice", "Resurrection", "Ghost Fleet Offensive",
+    "Armistice", "Modern Ships Pack"
+]
+
+DLC_CONTENT = {
+    "Reinforcement Pack": {
+        "Ships": ["Berserk", "Janus"],
+        "Squadrons": [],
+        "Munitions": ["Proximity Mine", "EMP Mine"]
+    },
+    "The Broken Alliance": {
+        "Ships": ["Minerva", "Celestra"],
+        "Squadrons": ["Assault Raptor"],
+        "Munitions": []
+    },
+    "Anabasis": {
+        "Ships": [],
+        "Squadrons": [],
+        "Munitions": ["Debris Mine", "EMP Generator"]
+    },
+    "Sin and Sacrifice": {
+        "Ships": ["Heracles"],
+        "Squadrons": [],
+        "Munitions": []
+    },
+    "Resurrection": {
+        "Ships": ["Jupiter Mk2"], # Note: Special case, always available
+        "Squadrons": ["Taipan"],
+        "Munitions": []
+    },
+    "Ghost Fleet Offensive": {
+        "Ships": ["Orion", "Defender"],
+        "Squadrons": [],
+        "Munitions": []
+    },
+    "Armistice": { # No in-game content relevant to the editor
+        "Ships": [], "Squadrons": [], "Munitions": []
+    },
+    "Modern Ships Pack": {
+        "Ships": ["Mercury", "Valkyrie"],
+        "Squadrons": ["Viper Mk VII"],
+        "Munitions": []
+    }
 }
