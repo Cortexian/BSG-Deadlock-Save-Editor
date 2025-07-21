@@ -12,13 +12,11 @@ This is a GUI save-game editor for Windows. Written in python using tkinter with
 - DLC Configuration to reduce possibility of modifying your save in a way that locks it out due to missing DLC.
 - Display a list of current fleets and the ships that make up those fleets.
 - Rename fleets and ships.
-- Modify fleet composition (add/remove/modify ships - v0.2 added multi-select for ship removal/modification).
+- Modify fleet composition (add/remove/modify/transfer ships, set a ship as flagship per fleet).
+- Modify fleets (create/remove fleets).
+- Modify ship munitions and squadrons if applicable.
 - Display and modify resources (Tylium / Requisition Points).
 - Options to globally unlock/research specific ships, munitions, and fighter squadron types.
-
-### Planned Features
-- More detailed ship modification, including changing equipped munitions and fighter squadrons where applicable.
-- Complete fleet management from editor (add functions for setting a ship as flagship, transfer ships between fleets).
 
 ### Getting Started
 If you just want to use the application, download the latest verison from the [Releases](https://github.com/Cortexian/BSG-Deadlock-Save-Editor/releases) section.
