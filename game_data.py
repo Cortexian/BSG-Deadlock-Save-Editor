@@ -35,18 +35,74 @@ MUNITION_TYPES = {
     "Debris Mine": 21, "EMP Generator": 22
 }
 
-# --- Squadron Capacity Definitions ---
-SQUADRON_CAPACITY = {
-    "Berserk": {"capacity": 1, "viper_mk_vii_capable": False},
-    "Adamant": {"capacity": 1, "viper_mk_vii_capable": False},
-    "Orion": {"capacity": 1, "viper_mk_vii_capable": False},
-    "Atlas": {"capacity": 3, "viper_mk_vii_capable": False},
-    "Artemis": {"capacity": 2, "viper_mk_vii_capable": False},
-    "Minerva": {"capacity": 2, "viper_mk_vii_capable": False},
-    "Jupiter": {"capacity": 3, "viper_mk_vii_capable": False},
-    "Jupiter Mk2": {"capacity": 4, "viper_mk_vii_capable": False},
-    "Valkyrie": {"capacity": 1, "viper_mk_vii_capable": True},
-    "Mercury": {"capacity": 4, "viper_mk_vii_capable": True}
+# --- Ship Loadout Definitions ---
+SHIP_LOADOUTS = {
+    "Manticore": { "squadrons": [], "munitions": 1 },
+    "Berserk": { "squadrons": [["Viper Mk I", "Viper Mk II", "Raptor", "Assault Raptor", "Sweeper", "Taipan"]], "munitions": 0 },
+    "Adamant": { "squadrons": [["Viper Mk I", "Viper Mk II", "Raptor", "Assault Raptor", "Sweeper", "Taipan"]], "munitions": 1 },
+    "Ranger": { "squadrons": [], "munitions": 2 },
+    "Celestra": { "squadrons": [], "munitions": 2 },
+    "Minotaur": { "squadrons": [], "munitions": 0 },
+    "Atlas": {
+        "squadrons": [
+            ["Viper Mk I", "Viper Mk II", "Raptor", "Assault Raptor", "Sweeper", "Taipan"],
+            ["Viper Mk I", "Viper Mk II", "Raptor", "Assault Raptor", "Sweeper", "Taipan"],
+            ["Raptor", "Assault Raptor", "Sweeper"]
+        ],
+        "munitions": 0
+    },
+    "Jupiter": {
+        "squadrons": [
+            ["Viper Mk I", "Viper Mk II", "Raptor", "Assault Raptor", "Sweeper", "Taipan"],
+            ["Viper Mk I", "Viper Mk II", "Raptor", "Assault Raptor", "Sweeper", "Taipan"],
+            ["Raptor", "Assault Raptor", "Sweeper"]
+        ],
+        "munitions": 1
+    },
+    "Heracles": { "squadrons": [], "munitions": 0 },
+    "Minerva": {
+        "squadrons": [
+            ["Viper Mk I", "Viper Mk II", "Raptor", "Assault Raptor", "Sweeper", "Taipan"],
+            ["Viper Mk I", "Viper Mk II", "Raptor", "Assault Raptor", "Sweeper", "Taipan"]
+        ],
+        "munitions": 2
+    },
+    "Artemis": {
+        "squadrons": [
+            ["Viper Mk I", "Viper Mk II", "Raptor", "Assault Raptor", "Sweeper", "Taipan"],
+            ["Viper Mk I", "Viper Mk II", "Raptor", "Assault Raptor", "Sweeper", "Taipan"]
+        ],
+        "munitions": 1
+    },
+    "Janus": { "squadrons": [], "munitions": 3 },
+    "Jupiter Mk2": {
+        "squadrons": [
+            ["Viper Mk I", "Viper Mk II", "Raptor", "Assault Raptor", "Sweeper", "Taipan"],
+            ["Viper Mk I", "Viper Mk II", "Raptor", "Assault Raptor", "Sweeper", "Taipan"],
+            ["Raptor", "Assault Raptor", "Sweeper"],
+            ["Raptor", "Assault Raptor", "Sweeper"]
+        ],
+        "munitions": 1
+    },
+    "Defender": { "squadrons": [["Viper Mk I", "Viper Mk II", "Raptor", "Assault Raptor", "Sweeper", "Taipan"]], "munitions": 0 },
+    "Orion": { "squadrons": [["Viper Mk I", "Viper Mk II", "Raptor", "Assault Raptor", "Sweeper", "Taipan"]], "munitions": 1 },
+    "Mercury": {
+        "squadrons": [
+            ["Viper Mk I", "Viper Mk II", "Viper Mk VII", "Raptor", "Assault Raptor", "Sweeper", "Taipan"],
+            ["Viper Mk I", "Viper Mk II", "Viper Mk VII", "Raptor", "Assault Raptor", "Sweeper", "Taipan"],
+            ["Viper Mk I", "Viper Mk II", "Viper Mk VII", "Raptor", "Assault Raptor", "Sweeper", "Taipan"],
+            ["Raptor", "Assault Raptor", "Sweeper"]
+        ],
+        "munitions": 2
+    },
+    "Valkyrie": { "squadrons": [["Viper Mk I", "Viper Mk II", "Viper Mk VII", "Raptor", "Assault Raptor", "Sweeper", "Taipan"]], "munitions": 1 },
+    "Daidalos": {
+        "squadrons": [
+            ["Viper Mk I"],
+            ["Raptor"]
+        ],
+        "munitions": 0
+    }
 }
 
 # --- DLC Definitions ---
@@ -78,7 +134,7 @@ DLC_CONTENT = {
         "Munitions": []
     },
     "Resurrection": {
-        "Ships": ["Jupiter Mk2"], # Note: Special case, always available
+        "Ships": ["Jupiter Mk2"],
         "Squadrons": ["Taipan"],
         "Munitions": []
     },
@@ -87,7 +143,7 @@ DLC_CONTENT = {
         "Squadrons": [],
         "Munitions": []
     },
-    "Armistice": { # No in-game content relevant to the editor
+    "Armistice": {
         "Ships": [], "Squadrons": [], "Munitions": []
     },
     "Modern Ships Pack": {
